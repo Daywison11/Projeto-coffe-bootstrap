@@ -2,7 +2,7 @@
 
 html{
     /*para compensar o scroll quando for nescessarios para cima ou para baixo*/
-    scroll-padding-top: 9rem;
+    scroll-padding-top: 6rem;
     scroll-behavior: smooth;
 }
 
