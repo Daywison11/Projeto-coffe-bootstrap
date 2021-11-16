@@ -57,7 +57,22 @@ body{
     transition: linear  0.5s;
     letter-spacing: 1px;
 }
+.hover-btn:not(:hover){
+    animation: diminuir 0.3s;
+    animation-fill-mode: forwards;
+    letter-spacing: 0px;
+    transition: linear;
 
+}
+
+@keyframes diminuir{
+    0%{
+        width:180px;
+    }
+    100%{
+        width: 150px;
+    }
+}
 @keyframes crecer{
     0%{
         width:150px ;
@@ -127,4 +142,33 @@ body{
 .img-review{
     border-radius: 50%;
     max-width: 60px;
+}
+
+.blogs .img-blogs{
+    transition: linear 0.2s;
+    object-fit: cover;
+}
+.blogs:hover .img-blogs{
+    transform: scale(1.2);
+}
+.comp{
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    transition: linear 0.2s;
+}
+.comp:hover{
+    background-color: #d3ad7f;
+    
+}
+
+.linkF{
+    padding: 5px 20px;
+    transition: linear 0.2s;
+}
+.linkF:hover{
+    background-color: #d3ad7f;
 }

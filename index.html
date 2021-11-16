@@ -40,7 +40,7 @@
               </li>
             </ul>
             <form class="d-flex me-5">
-              <input class="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search" id="pesquisa">
               <div class="btn hover fas fa-search border-0 fs-4 " type="submit" id="pesquisa" >
               </div>
               <div class="btn hover fas fa-shopping-cart border-0 fs-4" type="submit" id="pesquisa" ></div>
@@ -281,7 +281,76 @@
         </div>
       </div>
     </section>
-    <br><br>
+    <br>
+    <section id="blogs">
+      <h1 class="text-center text-white" >OUR<span class="cor-rosa-tx"> BLOGS </span></h1>
+      <br>
+
+      <div class="container d-flex justify-content-evenly flex-wrap ">
+        <div class="card bg-black borda text-white blogs" style="width: 22rem;">
+          <div class="card-img-top overflow-hidden" ><img src="images/blog-1.jpeg" class=" img-blogs" alt="blog-1" ></div>
+          <div class="card-body">
+            <h5 class="card-title fs-4">Tasty And Refreshing Coffee</h5>
+            <h6 class="cor-rosa-tx">By Admin / 21st May, 2021</h6>
+            <p class="card-text fs-6">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</p>
+            <a href="#" class="btn hover-btn">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card bg-black borda text-white blogs" style="width: 22rem;">
+          <div class="card-img-top overflow-hidden"><img src="images/blog-2.jpeg" class="img-blogs" alt="blog-1" ></div>
+          <div class="card-body">
+            <h5 class="card-title fs-4">Tasty And Refreshing Coffee</h5>
+            <h6 class="cor-rosa-tx">By Admin / 21st May, 2021</h6>
+            <p class="card-text fs-6">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</p>
+            <a href="#" class="btn hover-btn">Go somewhere</a>
+          </div>
+        </div>
+        
+        <div class="card bg-black borda text-white blogs " style="width: 22rem;">
+          <div class="card-img-top overflow-hidden" ><img src="images/blog-3.jpeg" class=" img-blogs" alt="blog-1"></div>
+          <div class="card-body">
+            <h5 class="card-title fs-4">Tasty And Refreshing Coffee</h5>
+            <h6 class="cor-rosa-tx">By Admin / 21st May, 2021</h6>
+            <p class="card-text fs-6">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</p>
+            <a href="#" class="btn hover-btn">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <footer class="bg-dark">
+      <div class="cotainer d-flex ">
+        <div class="share m-auto">
+          <a href="#" class="fab fa-facebook-f text-white m-2 comp borda"></a>
+          <a href="#" class="fab fa-twitter text-white m-2 comp borda"></a>
+          <a href="#" class="fab fa-instagram text-white m-2 comp borda"></a>
+          <a href="#" class="fab fa-linkedin text-white m-2 comp borda"></a>
+          <a href="#" class="fab fa-pinterest text-white m-2 comp borda"></a>
+        </div>
+      </div>
+      <br>
+      <div class="container text-center ">
+        <div class="text-capitalize">
+          <a href="#" class="text-decoration-none text-white m-1 borda linkF ">about</a>
+          <a href="#" class="text-decoration-none text-white m-1 borda linkF">home</a>
+          <a href="#" class="text-decoration-none text-white m-1 borda linkF">menu</a>
+          <a href="#" class="text-decoration-none text-white m-1 borda linkF">blogs</a>
+          <a href="#" class="text-decoration-none text-white m-1 borda linkF">products</a>
+          <a href="#" class="text-decoration-none text-white m-1 borda linkF">review</a>
+          <a href="#" class="text-decoration-none text-white m-1 borda linkF">contact</a>
+      </div>
+      </div>
+      <br><br>
+      <h5 class="text-center text-white fw-light fw-6 ">Created By <span class="cor-rosa-tx">Mr. Web Designer</span> | All Rights Reserved </h5>
+
+    </footer>
+    <script>
+      function pesquisar(){
+        $('pesquisa')
+      }
+      
+    </script>
 
 
     <script src="https://kit.fontawesome.com/fc83a5f384.js" crossorigin="anonymous"></script>
