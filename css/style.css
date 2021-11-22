@@ -11,7 +11,35 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.search{
+    position: absolute;
+    width: 300px;
+    left: 70%;
+    top: 90px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: linear 0.2s;
+}
 
+.cart-itens{
+    height: 100%;
+    top: 82px;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: linear 0.4s;
+}
+
+.activecart{
+    transition: linear 0.4s;
+    transform: scaleX(1);
+    
+    right: 0%;
+}
+.activeSeach{
+    display: block;
+    transform: scaleY(1);
+}
 .cor-primaria-bg{
     background-color:#010103 ;
 }
@@ -104,6 +132,10 @@ body{
     width:100px ;
 }
 
+#about .card{
+    max-width: 85%;
+}
+
 .hover-cards{
     background-color: black;
     color: white;
@@ -171,4 +203,70 @@ body{
 }
 .linkF:hover{
     background-color: #d3ad7f;
+    
+}
+
+
+@media (max-width:991px){
+    .search{
+        position: absolute;
+        width: 300px;
+        left: 2px;
+        top: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: linear 0.2s;
+        margin-top: 7px;
+    }
+    .activeSeach{
+        display: block;
+        transform: scaleY(1);
+    }
+    .cart-itens{
+        height: none;
+        z-index: 50000;
+    }
+    .title-position{
+        top: 150px;
+        font-size: 0.7rem;
+    }
+}
+@media (max-width:741px){
+    .img-home{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .title-position{
+        top: 150px;
+        max-width: 50%;
+        font-size: 0.7rem;
+    }
+    #about .card{
+        max-width: 90%;
+    }
+}
+@media (max-width:621px){
+    .img-home{
+        width: 120%;
+        margin-top: 8rem;
+    }   
+}
+
+@media (max-width:493px){
+    .img-home{
+        width: 130%;
+        margin-left: -20px;
+        margin-top: 8rem;
+    }   
+    .title-position{
+        top: 150px;
+        max-width: 90%;
+        font-size: 0.7rem;
+    }
+    .title-position h1{
+        font-size: 1.5rem;
+    }
+    .card-body{
+        font-size: 0.8rem;
+    }
 }
